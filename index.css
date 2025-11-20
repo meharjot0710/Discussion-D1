@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    display: flex;
+    height: 80vh;
+    gap: 20px;
+}
+.left-pane {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.right-pane {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+}
+h2 {
+    margin-top: 0;
+}
+.question-form, .response-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.resolve-btn {
+    background-color: #28a745;
+}
+.resolve-btn:hover {
+    background-color: #218838;
+}
+.question-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.question-item:hover {
+    background-color: #f8f9fa;
+}
+.question-item.resolved::before {
+    content: "[Resolved] ";
+    color: #28a745;
+    font-weight: bold;
+}
+.question-details, .response-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.response-item {
+    background-color: #f8f9fa;
+}
